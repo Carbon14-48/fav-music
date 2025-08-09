@@ -174,16 +174,6 @@
     color: var(--hot-pink);
   }
 }
-
-@layer reviews {
-  .imggroup {
-    margin-top: 2rem;
-  }
-  .star {
-    width: 18px;
-  }
-}
-
 @media (min-width: 800px) {
   .wrapper {
     max-width: 800px;
