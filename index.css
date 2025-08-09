@@ -42,7 +42,7 @@
     --h6: var(--base-size);
     --lime: lime;
     --magenta: magenta;
-    --magenta50: rgb(255, 50, 255);
+    --magenta50: #f47dda80;
     --hot-pink: hotpink;
     --white: white;
     --tan: tan;
@@ -65,7 +65,6 @@
     font-size: var(--base-size);
     margin: 0;
     padding: 0;
-    text-align: center;
     ul {
       list-style: none;
     }
@@ -148,7 +147,7 @@
   }
 }
 
-@layer header-banner-tour {
+@layer header-banner {
   .wrapper {
     max-width: 375px;
     margin: 0 auto;
@@ -161,6 +160,8 @@
   header img {
     max-width: 150px;
   }
+}
+@layer top-fav {
   .artist {
     color: var(--cyan);
     font-family: var(--ff-game);
@@ -171,25 +172,51 @@
     font-family: var(--ff-heading);
   }
   .album {
-    color: var(--hot-pink);
+    color: var(--tan);
+  }
+  .button-primary {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--magenta);
+    border: 2px solid magenta;
+    border-radius: 10%;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    width: 170px;
+  }
+  .button-primary:hover {
+    color: var(--cyan);
+    border: 2px solid var(--cyan);
+  }
+  .button-expired {
+    color: var(--magenta50);
+    border-color: var(--magenta50);
+  }
+  .button-expired:hover {
+    cursor: not-allowed;
+    color: var(--magenta50);
+    border-color: var(--magenta50);
+  }
+  .title {
+    color: var(--tan);
+    font-family: var(--ff-heading);
+  }
+  .diagonalCross2 {
+    background: linear-gradient(
+      to top right,
+      transparent calc(50% - 2px),
+      var(--magenta50),
+      transparent calc(50% + 2px)
+    );
   }
 }
 @media (min-width: 800px) {
   .wrapper {
     max-width: 800px;
     padding: 2rem;
-  }
-  main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  main h1 {
-    grid-area: 1 / 1 / 2 / 4;
-  }
-  aside {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
   }
 }
 
@@ -199,10 +226,5 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 0 2rem;
-  }
-  main {
-    grid-area: 1 / 2 / 5 / 3;
-    padding-top: 8rem;
-    display: block;
   }
 }
