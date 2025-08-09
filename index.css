@@ -13,6 +13,13 @@
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: "PressStart";
+    src: url("./assets/fonts/PressStart.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
   html {
     box-sizing: border-box;
   }
@@ -36,6 +43,7 @@
     --lime: lime;
     --magenta: magenta;
     --magenta50: rgb(255, 50, 255);
+    --hot-pink: hotpink;
     --white: white;
     --tan: tan;
     --teal: teal;
@@ -46,6 +54,7 @@
     --sans-serif: "Orbitron", sans-serif;
     --ff-heading: "RockSalt", cursive;
     --ff-text: "Orbitron", sans-serif;
+    --ff-game: "PressStart", var(--sans-serif);
   }
   body {
     font-family: var(--sans-serif);
@@ -153,11 +162,16 @@
     max-width: 150px;
   }
   .artist {
-    color: var(--tan);
+    color: var(--cyan);
+    font-family: var(--ff-game);
   }
   .song {
     color: var(--lime);
     font-size: var(--h5);
+    font-family: var(--ff-heading);
+  }
+  .album {
+    color: var(--hot-pink);
   }
 }
 
