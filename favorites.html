@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>My Music player</title>
+    <title>Top Favorites - Magenta Lime</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <a href="#">
+    <!-- NAVBAR AT THE TOP! -->
+    <header id="top">
+      <div id="home-logo">
+        <a href="home.html">
           <img src="./assets/logo.svg" alt="Magenta Lime. Click for home." />
         </a>
-      </header>
+      </div>
+      <button type="button" id="mainMenuOpen" tabindex="-1" hidden></button>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">Top Favorites</a></li>
+          <li><a href="#" class="action">Recommend a Song?</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- FAVORITES CONTENT -->
+    <div class="wrapper">
+      <!-- REMOVED THE OLD HEADER WITH LOGO! -->
       <main>
         <h1 class="h1">MY TOP FAVORITES</h1>
         <p>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="temp.css" />
+    <title>Magenta Lime - Music Player</title>
+  </head>
+  <body>
+    <!-- NAVIGATION COMPONENT -->
+    <header id="top">
+      <div id="home-logo">
+        <a href="#">
+          <img src="./assets/logo.svg" alt="Magenta Lime. Click for home." />
+        </a>
+      </div>
+      <button type="button" id="mainMenuOpen" tabindex="-1" hidden></button>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="favorites.html">Top Favorites</a></li>
+          <li><a href="#" class="action">Recommend a Song?</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- AUDIO PLAYER COMPONENT -->
+      <section class="cover">
+        <img src="./assets/crystal_cats.jpg" alt="crystal castles" />
+        <div id="audio-player-container">
+          <audio
+            src="./assets/music/crystal castles vanished Slowed.mp3"
+            preload="metadata"
+            loop
+          ></audio>
+          <div class="name-play">
+            <p>Bombshell Looks</p>
+            <button id="play-icon"></button>
+            <p>Track 7</p>
+          </div>
+          <div class="controls">
+            <div class="play-slider">
+              <span id="current-time" class="time">0:00</span>
+              <input type="range" id="seek-slider" max="100" value="0" />
+              <span id="duration" class="time">0:00</span>
+            </div>
+            <div class="volume">
+              <output id="volume-output">100</output>
+              <input type="range" id="volume-slider" max="100" value="100" />
+              <button id="mute-icon"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS COMPONENT -->
+      <aside class="reviews">
+        <figure>
+          <blockquote>
+            pastel ghost<br />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt="Four star rating."
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+          </blockquote>
+          <figcaption><cite>synthwave haze</cite></figcaption>
+        </figure>
+        <div class="featured-img">
+          <img
+            src="./assets/crystal_castles_kid.jpg"
+            alt="Purple stage and excited crowd."
+          />
+        </div>
+        <figure>
+          <blockquote>
+            Cult Member<br />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt="Four star rating."
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+          </blockquote>
+          <figcaption>
+            <cite>darkwave beats</cite>
+          </figcaption>
+        </figure>
+        <div class="featured-img">
+          <img
+            src="./assets/pastl.jpg"
+            alt="Red stage with fireworks and excited crowd."
+          />
+        </div>
+        <figure>
+          <blockquote>
+            Crystal Castles<br />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt="Five star rating."
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+          </blockquote>
+          <figcaption><cite>electro punk</cite></figcaption>
+        </figure>
+        <div class="featured-img">
+          <img
+            src="./assets/aphex_twin.jpg"
+            alt="Blue smoky stage and crowd with person raising arms."
+          />
+        </div>
+        <figure>
+          <blockquote>
+            aphex twin<br />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt="Four star rating."
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+            <img
+              src="https://assets.codepen.io/296057/fem-star.svg"
+              alt=""
+              class="star"
+            />
+          </blockquote>
+          <figcaption><cite>Glitch Genuis</cite></figcaption>
+        </figure>
+      </aside>
+
+      <!-- HOME CONTENT COMPONENT -->
+      <section class="album">
+        <h2>New Feature</h2>
+        <h1 class="stylish lime">Get The Whole Playlist</h1>
+        <a href="#" class="button-primary">GET</a>
+      </section>
+
+      <table>
+        <caption>
+          My Top Favorites
+        </caption>
+        <tr>
+          <th>Track</th>
+          <th>Song</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Crystal Castles - Vanished</td>
+          <td>3:27</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Crystal Castles - Crimewave</td>
+          <td>3:18</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Crystal Castles - Knights</td>
+          <td>3:32</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Crystal Castles - Suffocation</td>
+          <td>3:45</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Crystal Castles - Pap Smear</td>
+          <td>2:56</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Pastel Ghost - Dark Beach</td>
+          <td>4:12</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Pastel Ghost - Shadows</td>
+          <td>3:54</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Aphex Twin - Xtal</td>
+          <td>4:51</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Aphex Twin - Fingerbib</td>
+          <td>3:45</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>MGMT - Kids</td>
+          <td>5:02</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>JJ - Still</td>
+          <td>3:28</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>JJ - Something About You</td>
+          <td>4:15</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Cult Member - Three</td>
+          <td>2:43</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Cult Member -U Weren't Here I Really Miss U</td>
+          <td>4:07</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>adore - Did I Tell U That I Miss U</td>
+          <td>3:52</td>
+        </tr>
+      </table>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script type="module" src="audio.js"></script>
+  </body>
+</html>
