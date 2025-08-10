@@ -186,6 +186,43 @@
     max-width: 150px;
   }
 }
+@layer feature {
+  .album {
+    border: 2px solid cyan;
+    max-width: 550px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  .album h2 {
+    margin-bottom: 2rem;
+  }
+}
+@layer track-list {
+  table {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  caption {
+    visibility: none;
+  }
+  th,
+  td {
+    padding: 1rem 0;
+  }
+  th {
+    text-align: left;
+    border-bottom: 1px solid var(--magenta);
+  }
+  th:nth-child(2) {
+    padding: 1rem;
+  }
+  td:last-of-type {
+    color: var(--magenta);
+  }
+}
 @layer top-fav {
   .artist {
     color: var(--cyan);
