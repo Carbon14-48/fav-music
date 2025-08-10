@@ -387,4 +387,37 @@
       padding: 0 1rem;
     }
   }
+  @media (min-width: 1000px) {
+    .reviews {
+      display: block;
+      width: 300px;
+      grid-template-columns: none;
+      justify-content: initial;
+    }
+
+    .reviews figure:nth-of-type(n) {
+      order: initial;
+      grid-column: initial;
+      grid-row: initial;
+      justify-self: initial;
+      padding: 0;
+    }
+
+    .reviews .featured-img {
+      order: initial;
+      grid-row: initial;
+      grid-column: initial;
+      padding: 0;
+      min-width: 350px;
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin-left: -8rem;
+    }
+
+    .featured-img img {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
