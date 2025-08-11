@@ -3,6 +3,9 @@
     max-width: 550px;
     margin: 0 auto;
   }
+  .cover > img {
+    border-radius: 10%;
+  }
 
   #audio-player-container {
     --seek-before-width: 0%;
