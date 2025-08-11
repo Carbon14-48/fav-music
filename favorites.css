@@ -53,6 +53,7 @@
     border-color: var(--magenta50);
   }
 
+  /* ORIGINAL FAVORITES LAYOUT! */
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -81,27 +82,5 @@
       var(--magenta50),
       transparent calc(50% + 2px)
     );
-  }
-  .footer svg {
-    fill: var(--lime);
-  }
-  .footer svg:hover {
-    fill: var(--cyan);
-  }
-  .logos,
-  .footer-links {
-    display: flex;
-    gap: 2.5rem;
-    justify-content: center;
-  }
-  .footer {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: end;
-    align-items: center;
-  }
-  .cloud {
-    align-self: end;
-    margin-left: auto;
   }
 }
