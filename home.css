@@ -322,9 +322,9 @@
       padding: 0;
       min-width: 350px;
       width: 200px;
-      height: 200px;
+      height: 300px;
       display: block;
-      margin-left: -8rem;
+      margin-left: -6rem;
     }
 
     .featured-img img {
@@ -395,5 +395,43 @@
 
   td:last-of-type {
     color: var(--magenta);
+  }
+}
+
+@layer tablet-Desktop-layout {
+  @media (width > 900px) {
+    .wrapper-home main {
+      display: grid;
+      grid-template-areas:
+        "reviews cover album"
+        "reviews cover track-list"
+        "reviews . track-list";
+      gap: 2rem;
+    }
+    .wrapper-home {
+      display: grid;
+      grid-template-areas:
+        "main"
+        "footer";
+    }
+
+    .wrapper-home main {
+      grid-area: main;
+    }
+    .wrapper-home .footer {
+      grid-area: footer;
+    }
+    .cover {
+      grid-area: cover;
+    }
+    .reviews {
+      grid-area: reviews;
+    }
+    .album {
+      grid-area: album;
+    }
+    .track-list {
+      grid-area: track-list;
+    }
   }
 }
