@@ -351,15 +351,29 @@
     }
 
     #mainMenuOpen + nav ul:after {
-      content: "\1F5D9";
+      content: "";
       display: block;
       position: absolute;
       top: 0.5rem;
       right: 1rem;
-      font-size: 1.5rem;
-      line-height: 1;
+      width: 20px;
+      height: 20px;
       cursor: pointer;
-      color: magenta;
+      background: linear-gradient(
+          45deg,
+          transparent 35%,
+          magenta 35%,
+          magenta 65%,
+          transparent 65%
+        ),
+        linear-gradient(
+          -45deg,
+          transparent 35%,
+          magenta 35%,
+          magenta 65%,
+          transparent 65%
+        );
+      background-size: 100% 100%;
     }
 
     @media (max-width: 350px) {
